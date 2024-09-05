@@ -18,10 +18,10 @@ function setup(){
 
 function draw(){
   noStroke();
-  for (i = 0; i <=1; i++) {
-    for (j = 0; j <=1; j++) {
+  for (let i = 0; i <=1; i++) {
+    for (let j = 0; j <=1; j++) {
       c = 0;
-      for (k = 10; k >=1; k--) {
+      for (let k = 10; k >=1; k--) {
         a = map(c, 0, 100, 0, 255);
         colorear(i, j);
         //
