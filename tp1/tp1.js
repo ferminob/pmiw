@@ -1,10 +1,10 @@
 //Fermin Oberti
 //legajo 119102/7
 
-var imagen;
-var c;
-var a;
-var click;
+let imagen;
+let c;
+let a;
+let click;
 
 function preload(){
   imagen = loadImage('assets/F_15.jpg');
