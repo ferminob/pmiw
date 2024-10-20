@@ -1,3 +1,6 @@
+//Fermin Oberti comision 5 119102/7
+//https://youtu.be/SSN2-HNYIy4
+
 let ancho = 640;
 let alto = 480;
 
