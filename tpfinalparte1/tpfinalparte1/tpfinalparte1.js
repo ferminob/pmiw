@@ -99,54 +99,55 @@ function CargarImagen()
 
 function CargarTexto() {
   if (pantallaActiva < texto.length) {
-    let textColor = 255; 
-    let backgroundColor = color(0, 0, 0, 150); 
+    let colorTexto = 255; 
+    let colorFondo = color(0, 0, 0, 150); 
 
     textSize(20);
     textAlign(LEFT, TOP); 
     
-    let lineHeight = 24; 
-    let x = 20; 
-    let y = 50; 
-    let currentText = texto[pantallaActiva];
+    let alturaLinea = 24; 
+    let posicionX = 20; 
+    let posicionY = 50; 
+    let textoActual = texto[pantallaActiva];
     
    
-    let words = currentText.split(" ");
-    let line = "";
-    let lines = []; 
-    let maxWidth = 0; 
+    let palabras = textoActual.split(" ");
+    let lineaTemporal = "";
+    let lineasFinales = []; 
+    let anchoMaximo = 0; 
 
     
-    for (let i = 0; i < words.length; i++) {
-      let testLine = line + words[i] + " ";
-      let testWidth = textWidth(testLine);
+    for (let i = 0; i < palabras.length; i++) {
+      let pruebaLinea = lineaTemporal + palabras[i] + " ";
+      let anchoPrueba = textWidth(pruebaLinea);
       
-      if (testWidth > 560 - x * 2) { 
-        lines.push(line); 
-        maxWidth = max(maxWidth, textWidth(line));
-        line = words[i] + " "; 
-        y += lineHeight; 
+      if (anchoPrueba > 560 - posicionX * 2) { 
+        lineasFinales.push(lineaTemporal); 
+        anchoMaximo = max(anchoMaximo, textWidth(lineaTemporal));
+        lineaTemporal = palabras[i] + " "; 
+        posicionY += alturaLinea; 
       } else {
-        line = testLine; 
+        lineaTemporal = pruebaLinea; 
       }
     }
-    lines.push(line); 
-    maxWidth = max(maxWidth, textWidth(line)); 
+    lineasFinales.push(lineaTemporal); 
+    anchoMaximo = max(anchoMaximo, textWidth(lineaTemporal)); 
 
     
-    let backgroundHeight = lines.length * lineHeight; 
-    fill(backgroundColor); 
-    rect(x - 5, 50 - 5, maxWidth + 10, backgroundHeight + 10, 10); 
+    let alturaFondo = lineasFinales.length * alturaLinea; 
+    fill(colorFondo); 
+    rect(posicionX - 5, 50 - 5, anchoMaximo + 10, alturaFondo + 10, 10); 
     
     
-    fill(textColor); 
-    y = 50; 
-    for (let i = 0; i < lines.length; i++) {
-      text(lines[i], x, y);
-      y += lineHeight;
+    fill(colorTexto); 
+    posicionY = 50; 
+    for (let i = 0; i < lineasFinales.length; i++) {
+      text(lineasFinales[i], posicionX, posicionY);
+      posicionY += alturaLinea;
     }
   }
 }
+
 
 function ControlClicks()
 {
