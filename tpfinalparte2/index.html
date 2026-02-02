@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>TP Final Parte 2 - Pandora Mini Juego</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main id="wrap">
+    <header>
+      <a href="../index.html">← Volver a la página principal</a>
+    </header>
+    <h1>TP Final Parte 2 - Pandora</h1>
+    <div id="canvas-holder"></div>
+    <p class="hint"></p>
+  </main>
+
+  <!-- p5.js + p5.sound -->
+  <script src="https://cdn.jsdelivr.net/npm/p5@1.9.4/lib/p5.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/p5@1.9.4/lib/addons/p5.sound.min.js"></script>
+
+  <!-- Tu sketch -->
+  <script src="tpfinalparte2.js"></script>
+
+  <script>
+    // Mover el canvas dentro del holder
+    const originalSetup = window.setup;
+    window.setup = function () {
+      originalSetup();
+      const c = document.querySelector("canvas");
+      document.getElementById("canvas-holder").appendChild(c);
+    };
+  </script>
+</body>
+</html>
