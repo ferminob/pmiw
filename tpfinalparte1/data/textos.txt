@@ -1,0 +1,15 @@
+0#
+1#Zeus crea a Pandora, la primera mujer, dotada con belleza, inteligencia y una chispa de curiosidad única.
+2#Pandora desarrolla una personalidad inquieta. Su curiosidad crece día a día, especialmente hacia lo desconocido.
+3#Los dioses le entregan una misteriosa caja y le ordenan que la cuide. Le prohíben abrirla bajo cualquier circunstancia.
+4#La caja comienza a emitir un leve brillo. Susurros extraños intentan atraerla. Pandora siente cómo su curiosidad empieza a superarla.
+5#Pandora duda: ¿Debe abrir la caja y descubrir su secreto? ¿O resistir la tentación? Una decisión cambiará el destino del mundo.
+6#Pandora decide no abrir la caja. Pasan los días, y la caja sigue intentando atraerla… pero sin éxito.
+7#Con el tiempo, Pandora se olvida de la caja. Un día, aparece un gato juguetón en su casa.
+8#El gato encuentra la caja. Jugando, la empuja y… ¡la abre sin querer! Pandora se asusta al verla abierta.
+9#Al mirar dentro, Pandora descubre que no había nada. Confundida, regaña a Zeus por la broma. *Final alternativo 1: La broma del gato.*
+10#Pandora abre la caja. De inmediato, los males del mundo escapan: enfermedades, sufrimiento y desgracias se dispersan por todas partes.
+11#Entre los males que se escapan, Pandora nota algo más en el fondo. Una pequeña luz cálida permanece atrapada.
+12#Pandora duda otra vez: ¿Debe acercarse para ver qué es esa luz? ¿O cerrar rápido la caja para evitar más daño?
+13#Pandora decide mirar al fondo. Descubre que la luz es la Esperanza. Al liberarla, se queda acompañando y consolando a la humanidad. *Final alternativo 2: La luz de la esperanza.*
+14#Pandora decide cerrar la caja antes de mirar. Sin saberlo, deja atrapada a la esperanza. Sin ella, el caos domina al mundo. *Final alternativo 3: El triunfo del caos.*
