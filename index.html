@@ -1,0 +1,246 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Pandora: What If — Sitio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- NAV (anclas) -->
+  <header class="topbar" id="top">
+    <a class="logo" href="#inicio">Pandora: What If</a>
+    <nav class="nav">
+      <a href="#mito">El mito</a>
+      <a href="#pandora">Quién es Pandora</a>
+      <a href="#moraleja">Moraleja</a>
+      <a href="#produccion">Producción</a>
+      <a href="#equipo">Equipo</a>
+      <a href="#jugar">Jugar</a>
+      <a href="#galeria">Galería</a>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <main id="inicio" class="hero">
+    <div class="hero__content">
+      <p class="tag">Mitología griega · Aventura interactiva</p>
+      <h1>Pandora y la Caja</h1>
+      <p class="lead">
+        Un “what if” sobre curiosidad, consecuencias y esperanza.
+        Explorá el relato con diferentes recorridos y finales alternativos,
+        y probá el mini-juego del conflicto lúdico.
+      </p>
+
+      <div class="cta">
+        <a class="btn" href="#jugar">Jugar ahora</a>
+        <a class="btn btn--ghost" href="#mito">Leer el mito</a>
+      </div>
+
+      <!-- Accesos directos (importante para la consigna) -->
+      <div class="cta cta--tight" style="margin-top:10px;">
+        <a class="btn btn--small" href="tpfinalparte1/index.html">Abrir Aventura (Etapa 1)</a>
+        <a class="btn btn--small btn--ghost" href="tpfinalparte2/index.html">Abrir Mini-juego (Etapa 2)</a>
+      </div>
+    </div>
+
+    <div class="hero__media" aria-hidden="true">
+      <img src="assets/img/imagen05.png" alt="Pandora con la caja en una escena oscura" />
+    </div>
+  </main>
+
+  <!-- SECCIÓN 1 -->
+  <section id="mito" class="section">
+    <div class="container grid">
+      <div>
+        <h2>¿De qué trata el mito?</h2>
+        <p>
+          Zeus crea a Pandora y le entrega una caja con una advertencia:
+          <strong>no debe abrirla</strong>. La curiosidad la pone a prueba…
+          y cuando la tapa se levanta, los males se liberan al mundo.
+        </p>
+        <p>
+          En algunas versiones, al final queda <strong>la Esperanza</strong>:
+          pequeña, pero capaz de sostener a la humanidad.
+        </p>
+        <a class="link" href="#pandora">Siguiente: Pandora →</a>
+      </div>
+
+      <figure class="card">
+        <img src="assets/img/pandoracaja1.png" alt="Caja de Pandora iluminada" />
+        <figcaption>La caja: símbolo de tentación y consecuencia.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- SECCIÓN 2 -->
+  <section id="pandora" class="section section--alt">
+    <div class="container grid">
+      <figure class="card">
+        <img src="assets/img/imagen03.png" alt="Pandora observando la caja" />
+        <figcaption>Pandora: curiosidad, humanidad y decisión.</figcaption>
+      </figure>
+
+      <div>
+        <h2>¿Quién es Pandora?</h2>
+        <p>
+          Pandora representa el choque entre lo desconocido y la necesidad humana
+          de entender. No es “buena” o “mala”: es un personaje que decide, duda,
+          se equivoca y aprende.
+        </p>
+        <ul class="bullets">
+          <li><strong>Curiosidad:</strong> motor de descubrimiento.</li>
+          <li><strong>Responsabilidad:</strong> toda acción tiene efectos.</li>
+          <li><strong>Ambigüedad:</strong> no hay un solo destino.</li>
+        </ul>
+        <a class="link" href="#moraleja">Siguiente: Moraleja →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECCIÓN 3 -->
+  <section id="moraleja" class="section">
+    <div class="container">
+      <h2>Moraleja</h2>
+      <div class="moraleja">
+        <p>
+          La curiosidad puede abrir puertas peligrosas, pero también revela lo que
+          nos salva. Incluso en el caos, una chispa de esperanza puede sostener el
+          camino.
+        </p>
+        <p class="quote">
+          “A veces, la esperanza no evita el dolor, pero evita la rendición.”
+        </p>
+      </div>
+
+      <div class="mini">
+        <h3>¿Y si…?</h3>
+        <p>
+          Nuestro proyecto explora finales alternativos: ¿qué pasa si Pandora no abre la caja?
+          ¿y si la esperanza queda atrapada?
+        </p>
+        <a class="btn btn--small" href="#jugar">Ir a jugar</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRODUCCIÓN -->
+  <section id="produccion" class="section section--alt">
+    <div class="container">
+      <h2>Proceso de producción</h2>
+      <p class="muted">Cómo lo armamos para la cursada (resumen corto y claro).</p>
+
+      <div class="cards">
+        <article class="card card--pad">
+          <h3>1) Guión y flujo</h3>
+          <p>
+            Diseñamos el recorrido narrativo con pantallas y decisiones tipo “elige tu aventura”.
+            Definimos finales alternativos y el punto de conflicto.
+          </p>
+        </article>
+
+        <article class="card card--pad">
+          <h3>2) Arte con IA</h3>
+          <p>
+            Generamos imágenes coherentes con una estética unificada y las adaptamos a 640×480
+            para la app en p5.js.
+          </p>
+        </article>
+
+        <article class="card card--pad">
+          <h3>3) Desarrollo en p5.js</h3>
+          <p>
+            Implementamos arreglos para textos e imágenes, botones interactivos y sonido.
+            En la etapa 2 sumamos POO con múltiples clases para el mini-juego.
+          </p>
+        </article>
+
+        <article class="card card--pad">
+          <h3>4) Publicación</h3>
+          <p>
+            Subimos el sitio y los proyectos al repositorio de GitHub y lo publicamos con GitHub Pages.
+          </p>
+        </article>
+      </div>
+
+      <a class="link" href="#equipo">Siguiente: Equipo →</a>
+    </div>
+  </section>
+
+  <!-- EQUIPO -->
+  <section id="equipo" class="section">
+    <div class="container">
+      <h2>Integrantes</h2>
+      <p class="muted">Datos del equipo y roles.</p>
+
+      <div class="cards">
+        <article class="card card--pad">
+          <h3>Oberti Fermín</h3>
+          <p>
+            Guión / estructura narrativa · armado del flujo · integración de escenas.
+          </p>
+        </article>
+
+        <article class="card card--pad">
+          <h3>Medina Salvador</h3>
+          <p>
+            UI / implementación en p5.js · assets · publicación en GitHub Pages.
+          </p>
+        </article>
+      </div>
+
+      <a class="link" href="#jugar">Siguiente: Jugar →</a>
+    </div>
+  </section>
+
+  <!-- JUGAR (ACCESO DIRECTO) -->
+  <section id="jugar" class="section section--alt">
+    <div class="container">
+      <h2>Acceso a la Aventura y al Mini-juego</h2>
+      <p class="muted">
+      </p>
+
+      <div class="play">
+        <a class="btn" href="tpfinalparte1/index.html" target="_blank" rel="noopener">
+          ▶ Abrir Aventura Gráfica (Etapa 1)
+        </a>
+        <a class="btn btn--ghost" href="tpfinalparte2/index.html" target="_blank" rel="noopener">
+          🎮 Abrir Mini-juego (Etapa 2)
+        </a>
+      </div>
+
+      <div class="mini" style="margin-top:14px;">
+        <h3>Instrucciones rápidas</h3>
+        <p>
+          Etapa 1: leé y elegí con los botones para avanzar por rutas alternativas. <br/>
+          Etapa 2: seguí las instrucciones dentro del juego; podés reiniciar cuando quieras.
+        </p>
+      </div>
+
+      <a class="link" href="#galeria">Siguiente: Galería →</a>
+    </div>
+  </section>
+
+  <!-- GALERÍA -->
+  <section id="galeria" class="section">
+    <div class="container">
+      <h2>Galería</h2>
+      <p class="muted">Imágenes generadas con IA para acompañar el relato.</p>
+
+      <div class="gallery">
+        <img src="assets/img/imagen04.png" alt="Ilustración 1" />
+        <img src="assets/img/imagen03.png" alt="Ilustración 2" />
+        <img src="assets/img/imagen05.png" alt="Ilustración 3" />
+      </div>
+
+      <a class="link" href="#top">↑ Volver al inicio</a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <p><strong>Créditos</strong> — Oberti Fermín 119102/7 · Medina Salvador 119087/8</p>
+    <p class="muted">Sitio con CSS propio · Proyectos en p5.js (Etapa 1 y 2).</p>
+  </footer>
+</body>
+</html>
